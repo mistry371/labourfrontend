@@ -174,7 +174,7 @@ export default function CustomerDashboard() {
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <StatusBadge status={job.status} />
-                      <span className="text-sm font-bold text-[#1b3a4b]">₹{job.budget}</span>
+                      <span className="text-sm font-bold text-[#1b3a4b]">₹{job.finalPrice || job.estimatedPrice}</span>
                     </div>
                   </Link>
                 ))}
