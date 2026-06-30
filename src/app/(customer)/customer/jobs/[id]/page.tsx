@@ -213,9 +213,9 @@ export default function CustomerJobDetailPage() {
           <div>
             <p className="font-bold text-teal-800">{job.categoryName}</p>
             <p className="text-xs text-teal-400">
-              {job.deviceName && `${job.deviceName} • `}
-              {job.serviceTypeName && `${job.serviceTypeName} • `}
-              {job.problemName}
+              {job.itAttributes?.deviceType && `${job.itAttributes.deviceType} • `}
+              {job.serviceName && `${job.serviceName} • `}
+              {job.itAttributes?.issueType || job.title}
             </p>
           </div>
         </div>
